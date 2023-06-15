@@ -1,0 +1,30 @@
+/* * {
+  overflow: hidden;
+} */
+@media (max-width: 768px) {
+  .nav_mobile_open,
+  .nav_mobile_close {
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .nav_mobile_open {
+    opacity: 1;
+    background-color: rgba(10, 10, 10, 0.8);
+    transition: all 500ms;
+  }
+
+  .nav_mobile_close {
+    opacity: 0;
+    transform: translateX(-999px);
+    transition: all 500ms;
+  }
+}

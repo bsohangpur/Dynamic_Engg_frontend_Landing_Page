@@ -1,0 +1,7 @@
+Navbar:- create and amazing and eye catching Navigation bar for and Dynamic Engineering
+business which is mostly deals with Heavy Electric Equipments for Constructions
+use chakra UI to create the UI and for animations use framer motion.
+
+Footer:- create and amazing and eye catching footer for and Dynamic Engineering
+business which is mostly deals with Heavy Electric Equipments for Constructions
+use chakra UI to create the UI and for animations use framer motion.
