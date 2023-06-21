@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { Component } from "react";
+import { Project as ProjectComponent } from "../components";
 
-const Project = () => {
-  return (
-    <div>Project</div>
-  )
+export default class Project extends Component {
+  render() {
+    return (
+      <div>
+        <ProjectComponent />
+      </div>
+    );
+  }
 }
-
-export default Project

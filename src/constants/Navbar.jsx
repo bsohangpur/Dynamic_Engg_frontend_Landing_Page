@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import { Box, Flex, Text, Button, IconButton } from "@chakra-ui/react";
+import { Box, Flex, Text, Button, IconButton, Image } from "@chakra-ui/react";
 import { DragHandleIcon, CloseIcon } from "@chakra-ui/icons";
 import { motion } from "framer-motion";
 import { links } from "../data";
 import { Link } from "react-router-dom";
+import { logo } from "../assets";
 
 const MotionBox = motion(Box);
 
@@ -21,15 +22,18 @@ export default class Navbar extends Component {
         as="nav"
         align="center"
         justify="space-between"
-        padding={4}
-        bg="gray.900"
+        padding={6}
+        bg="blue.300"
         color="white"
         position="relative"
       >
-        <MotionBox whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-          <Text fontSize="xl" fontWeight="bold">
-            Dynamic Engineering
-          </Text>
+        <MotionBox
+          as={Link}
+          to="/"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <Image src={logo} width={200} height={75} alt="logo" />
         </MotionBox>
         <Flex align="center">
           <Box
@@ -47,8 +51,8 @@ export default class Navbar extends Component {
                 <Button
                   as={Link}
                   to={link.link}
-                  variant={{base: "outline", md: "ghost"}}
-                  colorScheme={{base: "teal", md: "blackAlpha"}}
+                  variant={{ base: "outline", md: "ghost" }}
+                  colorScheme={{ base: "teal", md: "blackAlpha" }}
                 >
                   {link.name}
                 </Button>

@@ -8,13 +8,18 @@ const links=[
         link:'/about'
     },
     {
+        name:"Project",
+        link:'/projects'
+    },
+    {
         name:"Contact",
         link:'/contact'
     },
     {
         name:"Service",
-        link:'/service'
-    }
+        link:'/services'
+    },
+    
 ]
 
 export default links;

@@ -21,7 +21,7 @@ export default class Footer extends Component {
             as="h2"
             fontWeight="bold"
             fontSize="2xl"
-            className=' cursor-pointer'
+            className=" cursor-pointer"
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.2 }}
           >
@@ -34,12 +34,12 @@ export default class Footer extends Component {
         <Flex direction="column" align="center" justify="center">
           <Flex align="center">
             <Icon as={FaPhone} mr={2} />
-            <Link href="tel:+1234567890">+1 (234) 567-890</Link>
+            <Link href="tel:+1234567890">050 215 9679</Link>
           </Flex>
           <Flex align="center" mt={2}>
             <Icon as={FaEnvelope} mr={2} />
             <Link href="mailto:info@dynamicengineering.com">
-              info@dynamicengineering.com
+              info@dynamic-engg.com
             </Link>
           </Flex>
         </Flex>

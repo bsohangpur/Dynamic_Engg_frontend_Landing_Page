@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { Component } from 'react';
+import {Service as ServiceComponent} from '../components';
 
-const Service = () => {
-  return (
-    <div>Service</div>
-  )
+export default class Service extends Component {
+  render() {
+    return (
+      <div>
+        <ServiceComponent />
+      </div>
+    )
+  }
 }
-
-export default Service
