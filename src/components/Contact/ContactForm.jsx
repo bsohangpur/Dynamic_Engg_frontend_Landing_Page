@@ -56,7 +56,7 @@ class ContactForm extends React.Component {
                   >
                     <InputGroup className="">
                       <InputLeftAddon
-                        bg="gray.900"
+                        bg="rgb(0 78 103)"
                         color="white"
                         h={12}
                         children={<FaUser />}
@@ -87,7 +87,7 @@ class ContactForm extends React.Component {
                   >
                     <InputGroup className="">
                       <InputLeftAddon
-                        bg="gray.900"
+                        bg="rgb(0 78 103)"
                         color="white"
                         h={12}
                         children={<FaUser />}
@@ -118,7 +118,7 @@ class ContactForm extends React.Component {
                 >
                   <InputGroup className="">
                     <InputLeftAddon
-                      bg="gray.900"
+                      bg="rgb(0 78 103)"
                       color="white"
                       h={12}
                       children={<FaPhone />}
@@ -147,7 +147,7 @@ class ContactForm extends React.Component {
                 >
                   <InputGroup className="">
                     <InputLeftAddon
-                      bg="gray.900"
+                      bg="rgb(0 78 103)"
                       color="white"
                       h={12}
                       children={<FaEnvelope />}

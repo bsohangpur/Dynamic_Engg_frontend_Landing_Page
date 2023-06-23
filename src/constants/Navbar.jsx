@@ -46,8 +46,9 @@ export default class Navbar extends Component {
         <MotionBox
           as={Link}
           to="/"
-          whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
+          className=' bg-blue-shade-100 p-2 rounded-full shadow-md shadow-blue-shade-300'
         >
           <Image src={logo} width={200} height={75} alt="logo" />
         </MotionBox>

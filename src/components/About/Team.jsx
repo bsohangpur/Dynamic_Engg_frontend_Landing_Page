@@ -62,7 +62,7 @@ const TeamMember = ({ name, title, image, initial }) => {
       className=" w-fit h-fit"
     >
       <Flex direction="column" alignItems="center">
-        <Image src={image} borderRadius="full" boxSize="150px" />
+        <Image src={image} alt={name} borderRadius="full" boxSize="150px" />
         <Box mt={4}>
           <Text fontSize="xl" fontWeight="bold">
             {name}
@@ -81,7 +81,7 @@ const Team = () => {
         <Heading textAlign="center" mb={10}>
           Meet Our Team
         </Heading>
-        <SimpleGrid columns={[1, 2, 3]} placeItems='center' spacing={2}>
+        <SimpleGrid columns={[1, 2, 3]} placeItems="center" spacing={2}>
           {members.map((member) => (
             <TeamMember key={member.name} {...member} />
           ))}
