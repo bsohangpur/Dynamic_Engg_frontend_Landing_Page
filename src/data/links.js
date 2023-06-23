@@ -1,25 +1,24 @@
-const links=[
-    {
-        name:"Home",
-        link:'/'
-    },
-    {
-        name:"About",
-        link:'/about'
-    },
-    {
-        name:"Project",
-        link:'/projects'
-    },
-    {
-        name:"Contact",
-        link:'/contact'
-    },
-    {
-        name:"Service",
-        link:'/services'
-    },
-    
-]
+const links = [
+  {
+    name: "Home",
+    link: "/",
+  },
+  {
+    name: "About",
+    link: "/about",
+  },
+  {
+    name: "Service",
+    link: "/services",
+  },
+  {
+    name: "Project",
+    link: "/projects",
+  },
+  {
+    name: "Contact",
+    link: "/contact",
+  },
+];
 
 export default links;
