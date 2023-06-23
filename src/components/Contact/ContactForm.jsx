@@ -48,7 +48,10 @@ class ContactForm extends React.Component {
           >
             {(formik) => (
               <form onSubmit={formik.handleSubmit}>
-                <InputGroup flexDirection={{base: "column", md: "row"}} gap={6}>
+                <InputGroup
+                  flexDirection={{ base: "column", md: "row" }}
+                  gap={6}
+                >
                   <FormControl
                     isInvalid={
                       formik.errors.firstName && formik.touched.firstName
@@ -75,10 +78,6 @@ class ContactForm extends React.Component {
                         onBlur={formik.handleBlur}
                       />
                     </InputGroup>
-
-                    <FormErrorMessage>
-                      {formik.errors.firstName}
-                    </FormErrorMessage>
                   </FormControl>
                   <FormControl
                     isInvalid={
@@ -106,9 +105,6 @@ class ContactForm extends React.Component {
                         onBlur={formik.handleBlur}
                       />
                     </InputGroup>
-                    <FormErrorMessage>
-                      {formik.errors.lastName}
-                    </FormErrorMessage>
                   </FormControl>
                 </InputGroup>
 
@@ -129,7 +125,7 @@ class ContactForm extends React.Component {
                       type="number"
                       placeholder="enter your phone number..."
                       className=" placeholder:text-blue-shade-100"
-                      w={{ base: 'auto', md: 600 }}
+                      w={{ base: "auto", md: 600 }}
                       h={12}
                       border="1px"
                       borderColor="gray.400"
@@ -138,7 +134,6 @@ class ContactForm extends React.Component {
                       onBlur={formik.handleBlur}
                     />
                   </InputGroup>
-                  <FormErrorMessage>{formik.errors.phone}</FormErrorMessage>
                 </FormControl>
 
                 <FormControl
@@ -158,7 +153,7 @@ class ContactForm extends React.Component {
                       type="email"
                       placeholder="enter your email address..."
                       className=" placeholder:text-blue-shade-100"
-                      w={{ base: 'auto', md: 600 }}
+                      w={{ base: "auto", md: 600 }}
                       h={12}
                       border="1px"
                       borderColor="gray.400"
@@ -167,7 +162,6 @@ class ContactForm extends React.Component {
                       onBlur={formik.handleBlur}
                     />
                   </InputGroup>
-                  <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
                 </FormControl>
 
                 <FormControl
@@ -185,7 +179,6 @@ class ContactForm extends React.Component {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   ></Textarea>
-                  <FormErrorMessage>{formik.errors.message}</FormErrorMessage>
                 </FormControl>
 
                 <Button mt={4} colorScheme="teal" type="submit">

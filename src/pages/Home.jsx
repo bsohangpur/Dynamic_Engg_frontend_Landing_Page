@@ -25,7 +25,7 @@ export default class Home extends Component {
           <About />
         </div>
         <div className=" bg-blue-shade-100">
-          <Service isHome={true} />
+          <Service homeSlice={3} isHome={true} />
         </div>
         <div className=" bg-blue-shade-200">
           <WhyChooseUS />
@@ -34,7 +34,7 @@ export default class Home extends Component {
           <Contact />
         </div>
         <div className=" bg-blue-shade-200">
-          <Project />
+          <Project homeSlice={6} isHome={true} />
         </div>
         <div className=" bg-blue-shade-100">
           <Testimonial />

@@ -37,20 +37,6 @@ const services = [
       "Cutting-edge electronic solutions",
     ],
   },
-  {
-    id: 3,
-    title: "Civil Engineering",
-    features: [
-      "Structural design and analysis",
-      "Infrastructure planning",
-      "Construction management",
-    ],
-    benefits: [
-      "Sturdy and resilient structures",
-      "Optimized infrastructure development",
-      "Effective project coordination and execution",
-    ],
-  },
 ];
 
 class ServiceCard extends Component {
@@ -83,7 +69,7 @@ export default class FeaturesAndBenefit extends Component {
           <Heading textAlign="center" mb={10}>
             Features and Benefits
           </Heading>
-          <SimpleGrid columns={[1, 2, 3]} spacing={10}>
+          <SimpleGrid columns={[1, 2]} spacing={10}>
             {services.map((service) => (
               <ServiceCard key={service.id} {...service} />
             ))}

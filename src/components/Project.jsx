@@ -8,9 +8,11 @@ import {
   GridItem,
   Heading,
   Divider,
+  Button,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { projects } from "../data";
+import { Link } from "react-router-dom";
 
 const MotionBox = motion(Box);
 
@@ -22,7 +24,7 @@ export default class Project extends Component {
           Our Achievement
         </Heading>
         <Divider w={24} />
-        <Box>
+        <Box mb={12} className=" flex flex-col items-center justify-center">
           <Grid
             my={12}
             gridTemplateColumns={{
@@ -32,7 +34,7 @@ export default class Project extends Component {
             }}
             gap={6}
           >
-            {projects.map((project, index) => (
+            {projects.slice(0, this.props.homeSlice).map((project, index) => (
               <GridItem key={project.id + index} position="relative">
                 <MotionBox
                   initial={{ scaleX: 0, scaleY: 0.5 }}
@@ -47,7 +49,8 @@ export default class Project extends Component {
                       w={400}
                       h={250}
                       src={project.image}
-                      alt="Project Image"
+                      alt={project.name}
+                      borderRadius="lg"
                     />
                   </Box>
                   <MotionBox
@@ -64,6 +67,17 @@ export default class Project extends Component {
               </GridItem>
             ))}
           </Grid>
+          <Box display={!this.props.isHome && "none"} mt={12}>
+            <Button
+              as={Link}
+              to="/projects"
+              size="lg"
+              colorScheme="teal"
+              variant="solid"
+            >
+              Explore Our All Projects
+            </Button>
+          </Box>
         </Box>
       </Container>
     );

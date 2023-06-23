@@ -1,15 +1,7 @@
 import React, { Component } from "react";
-import {
-  Box,
-  Text,
-  Flex,
-  Spacer,
-  Button,
-  Image,
-  Container,
-  Divider,
-} from "@chakra-ui/react";
+import { Box, Text, Flex, Image, Container, Divider } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import { Saudi_German_Hospital } from "../assets";
 
 const MotionBox = motion(Box);
 
@@ -77,11 +69,12 @@ export default class WhyChooseUS extends Component {
             w={{ base: "100%", md: "50%" }}
           >
             <Image
-              src="https://img.freepik.com/free-photo/sun-setting-silhouette-electricity-pylons_1127-3239.jpg?w=900&t=st=1687328563~exp=1687329163~hmac=8a9c45af3fc069a16100dbb9a7cd39cfbe854268832e48b2d0ce8b66dd23ac62"
+              src={Saudi_German_Hospital}
               alt="why_choose_us_image"
               w="100%"
               h="100%"
               objectFit="cover"
+              borderRadius='md'
             />
           </MotionBox>
           <Box w={{ base: "100%", md: "50%" }}>
