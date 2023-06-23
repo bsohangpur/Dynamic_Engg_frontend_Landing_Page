@@ -1,21 +1,24 @@
 import React, { Component } from "react";
-import { Box, Flex, Icon, Link, Text, IconButton } from "@chakra-ui/react";
 import {
-  FaPhone,
-  FaEnvelope,
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-} from "react-icons/fa";
+  Box,
+  Flex,
+  Icon,
+  Link,
+  Text,
+  IconButton,
+  Button,
+} from "@chakra-ui/react";
+import { FaPhone, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { socials } from "../data";
+import { socials, links } from "../data";
+import { Link as ReactLink } from "react-router-dom";
 
 const MotionBox = motion(Box);
 
 export default class Footer extends Component {
   render() {
     return (
-      <Box as="footer" className=" bg-slate-950 text-gray-50 py-12">
+      <Box as="footer" className=" bg-blue-shade-500 text-gray-50 py-12">
         <Flex direction="column" align="center" justify="center" mb={8}>
           <MotionBox
             as="h2"
@@ -42,8 +45,22 @@ export default class Footer extends Component {
               info@dynamic-engg.com
             </Link>
           </Flex>
+          <Flex align="center" flexWrap='wrap' gap={4} mt={4}>
+            {links.map((link) => (
+              <Button
+                as={ReactLink}
+                variant="link"
+                color="gray.50"
+                size='lg'
+                key={link.name}
+                to={link.link}
+              >
+                {link.name}
+              </Button>
+            ))}
+          </Flex>
         </Flex>
-        <Box mt={8} textAlign="center">
+        <Box mt={4} textAlign="center">
           <Text fontSize="sm">
             &copy; {new Date().getFullYear()} Dynamic Engineering. All rights
             reserved.

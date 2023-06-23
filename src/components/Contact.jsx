@@ -12,7 +12,7 @@ export default class Contact extends Component {
     return (
       <Container maxW="container.xl" p={4} centerContent minH="100vh">
         <Divider w={24} />
-        <Flex className=" shadow-lg border rounded-lg" w="100%" h="100%">
+        <Flex className=" rounded-lg " w="100%" h="100%">
           <MotionBox
             initial={{ opacity: 0, scale: 0, x: -100 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
@@ -23,7 +23,7 @@ export default class Contact extends Component {
             bgSize="cover"
             w={{ base: "100%", md: "30%" }}
             display={{ base: "none", lg: "block" }}
-            className="rounded-s-lg "
+            className="rounded-s-lg shadow-lg shadow-blue-shade-200 border"
             h="90vh"
           >
             <Box className="flex items-end justify-center h-full">
@@ -50,8 +50,7 @@ export default class Contact extends Component {
             initial={{ opacity: 0, scale: 0, x: 100 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="md:rounded-e-lg p-6"
-            bg="gray.200"
+            className="md:rounded-e-lg p-6 shadow-lg shadow-blue-shade-200 border bg-blue-shade-400 text-blue-shade-100"
             w={{ base: "100%", lg: "70%" }}
           >
             <ContactForm />

@@ -5,12 +5,10 @@ import {
   Container,
   Flex,
   Heading,
-  Image,
-  Link,
-  Text,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
+import {Link} from 'react-router-dom'
 
 
 const MotionBox = motion(Box);
@@ -19,7 +17,7 @@ const MotionButton = motion(Button);
 export default class About extends Component {
   render() {
     return (
-      <Container maxW="container.lg">
+      <Container overflow='hidden' maxW="container.lg">
         <Box className=" relative" minH="100vh">
           <Flex h="100%" w="100%" justifyContent="center" alignItems="center">
             <MotionBox
@@ -71,6 +69,8 @@ export default class About extends Component {
                   of technology to create the best possible user experience.
                 </motion.p>
                 <MotionButton
+                as={Link}
+                to='/about'
                   initial={{
                     scale: 0,
                     y: 100,

@@ -1,67 +1,44 @@
 import React, { Component } from "react";
-import {
-  Box,
-  Text,
-  Heading,
-  Flex,
-  Image,
-  Container,
-  Divider,
-} from "@chakra-ui/react";
+import { Box, Heading, Container, Divider, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import { Autoplay, Pagination } from "swiper";
+import { testimonials } from "../data";
 
 const MotionBox = motion(Box);
 
 export default class Testimonial extends Component {
   render() {
     return (
-      <Container mb={12} maxW="container.xl" centerContent="true">
+      <Container py={12} maxW="container.xl" centerContent="true">
         <Heading as="h2" size="lg">
           What Our Clients Say
         </Heading>
-        <Divider w={36}/>
+        <Divider w={36} />
         <Box className="mt-12 w-full h-full">
           <Swiper
             pagination={{
               dynamicBullets: true,
             }}
-            modules={[Pagination]}
-            className="w-4/5 pb-12 h-[350px]"
+            modules={[Pagination, Autoplay]}
+            className="w-full md:w-4/5 pb-12 h-[450px] md:h-[350px]"
           >
-            <SwiperSlide>
-              <MotionBox
-                initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 1 }}
-                className="w-full h-full mx-12 border-2 rounded-lg flex justify-center items-center"
-              >
-                1
-              </MotionBox>
-            </SwiperSlide>
-            <SwiperSlide>
-              <MotionBox
-                initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 1 }}
-                className="w-full h-full mx-12 border-2 rounded-lg flex justify-center items-center"
-              >
-                2
-              </MotionBox>
-            </SwiperSlide>
-            <SwiperSlide>
-              <MotionBox
-                initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 1 }}
-                className="w-full h-full mx-12 border-2 rounded-lg flex justify-center items-center"
-              >
-                3
-              </MotionBox>
-            </SwiperSlide>
+            {testimonials.map((testimonial, index) => (
+              <SwiperSlide className="w-full h-full md:h-64" key={testimonial.name + index}>
+                <MotionBox
+                  initial={{ scale: 0, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 1 }}
+                  className="w-full p-4 h-full mx-12 border-2 border-blue-shade-500 rounded-lg flex flex-col justify-center items-center"
+                >
+                  <Text className="text-lg font-bold ">{testimonial.name}</Text>
+                  <Text className="text-sm mb-4 font-semibold">{testimonial.occupation}</Text>
+                  <Text className="text-base md:w-2/3">{testimonial.message}</Text>
+                </MotionBox>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </Box>
       </Container>

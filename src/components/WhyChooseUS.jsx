@@ -60,7 +60,7 @@ const points = [
 export default class WhyChooseUS extends Component {
   render() {
     return (
-      <Container maxW="container.xl" my="10">
+      <Container maxW="container.xl" py="10">
         <Flex
           gap={6}
           w="100%"

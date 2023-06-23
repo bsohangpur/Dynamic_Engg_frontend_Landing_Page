@@ -9,3 +9,13 @@ use chakra UI to create the UI and for animations use framer motion.
 Hero:- create and amazing and eye catching footer for and Dynamic Engineering
 business which is mostly deals with Heavy Electric Equipments for Constructions
 use chakra UI to create the UI and for animations use framer motion.
+
+color plate
+1. 004E67 dark
+2. 1B8090  |
+3. 46A9C9  |
+4. 9FD3E9  |
+5. E4F6F3 light
+
+
+

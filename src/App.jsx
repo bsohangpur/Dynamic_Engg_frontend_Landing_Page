@@ -1,24 +1,29 @@
 import React, { Component } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, useLocation } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-import { Home, About, Contact, Project, Service } from "./pages";
 import { Navbar, Footer } from "./constants";
-import "./App.css";
+import AnimationRoute from "./AnimationRoute";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 export default class App extends Component {
   render() {
     return (
       <ChakraProvider>
         <BrowserRouter>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/projects" element={<Project />} />
-            <Route path="/services" element={<Service />} />
-          </Routes>
+          <ScrollToTop />
+          <div className=" bg-blue-shade-500 text-blue-shade-100">
+            <Navbar />
+          </div>
+          <AnimationRoute />
           <Footer />
         </BrowserRouter>
       </ChakraProvider>

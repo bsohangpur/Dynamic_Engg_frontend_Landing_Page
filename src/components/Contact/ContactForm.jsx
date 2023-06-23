@@ -18,10 +18,10 @@ import { FaUser, FaEnvelope, FaPhone } from "react-icons/fa";
 class ContactForm extends React.Component {
   render() {
     return (
-      <Box className="h-full">
+      <Box className="h-full pb-10">
         <Box className="ml-12 flex flex-col justify-center h-1/4">
           <Heading as="h2">Contact Us</Heading>
-          <Text color="gray.600" mt={2} ml={2}>
+          <Text className="text-blue-shade-100" mt={2} ml={2}>
             We will contact you soon
           </Text>
         </Box>
@@ -54,7 +54,7 @@ class ContactForm extends React.Component {
                       formik.errors.firstName && formik.touched.firstName
                     }
                   >
-                    <InputGroup>
+                    <InputGroup className="">
                       <InputLeftAddon
                         bg="gray.900"
                         color="white"
@@ -66,6 +66,7 @@ class ContactForm extends React.Component {
                         name="firstName"
                         type="text"
                         placeholder="enter your first name..."
+                        className=" placeholder:text-blue-shade-100"
                         h={12}
                         border="1px"
                         borderColor="gray.400"
@@ -84,7 +85,7 @@ class ContactForm extends React.Component {
                       formik.errors.lastName && formik.touched.lastName
                     }
                   >
-                    <InputGroup>
+                    <InputGroup className="">
                       <InputLeftAddon
                         bg="gray.900"
                         color="white"
@@ -96,6 +97,7 @@ class ContactForm extends React.Component {
                         name="lastName"
                         type="text"
                         placeholder="enter your last name..."
+                        className=" placeholder:text-blue-shade-100"
                         h={12}
                         border="1px"
                         borderColor="gray.400"
@@ -114,7 +116,7 @@ class ContactForm extends React.Component {
                   mt={4}
                   isInvalid={formik.errors.phone && formik.touched.phone}
                 >
-                  <InputGroup>
+                  <InputGroup className="">
                     <InputLeftAddon
                       bg="gray.900"
                       color="white"
@@ -126,7 +128,8 @@ class ContactForm extends React.Component {
                       name="phone"
                       type="number"
                       placeholder="enter your phone number..."
-                      w={{ base: 400, md: 600 }}
+                      className=" placeholder:text-blue-shade-100"
+                      w={{ base: 'auto', md: 600 }}
                       h={12}
                       border="1px"
                       borderColor="gray.400"
@@ -142,7 +145,7 @@ class ContactForm extends React.Component {
                   mt={4}
                   isInvalid={formik.errors.email && formik.touched.email}
                 >
-                  <InputGroup>
+                  <InputGroup className="">
                     <InputLeftAddon
                       bg="gray.900"
                       color="white"
@@ -154,7 +157,8 @@ class ContactForm extends React.Component {
                       name="email"
                       type="email"
                       placeholder="enter your email address..."
-                      w={{ base: 400, md: 600 }}
+                      className=" placeholder:text-blue-shade-100"
+                      w={{ base: 'auto', md: 600 }}
                       h={12}
                       border="1px"
                       borderColor="gray.400"
@@ -174,7 +178,7 @@ class ContactForm extends React.Component {
                     id="message"
                     name="message"
                     as="textarea"
-                    w={{ base: 450, md: 650 }}
+                    w={{ base: "100%", md: 650 }}
                     border="1px"
                     borderColor="gray.400"
                     value={formik.values.message}
