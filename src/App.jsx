@@ -20,11 +20,13 @@ export default class App extends Component {
       <ChakraProvider>
         <BrowserRouter>
           <ScrollToTop />
-          <div className=" bg-blue-shade-500 text-blue-shade-100">
+          <div className=" fixed z-50 shadow-md backdrop-blur-md top-0 left-0 w-full bg-blue-shade-500 bg-opacity-40 text-blue-shade-100">
             <Navbar />
           </div>
-          <AnimationRoute />
-          <Footer />
+          <div className=" mt-24">
+            <AnimationRoute />
+            <Footer />
+          </div>
         </BrowserRouter>
       </ChakraProvider>
     );

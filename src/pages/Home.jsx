@@ -2,22 +2,22 @@ import React, { Component } from "react";
 import {
   About,
   Contact,
-  Hero,
   Service,
+  Hero,
   WhyChooseUS,
   Project,
   Testimonial,
 } from "../components";
 import PageAnimation from "./PageAnimation";
-import ScrollProgress from './ScrollProgress'
+import ScrollProgress from "./ScrollProgress";
 
 export default class Home extends Component {
   render() {
     return (
       <div>
-        <ScrollProgress/>
+        <ScrollProgress />
         <PageAnimation>
-          <div className=" bg-blue-shade-100">
+          <div className=" bg-blue-shade-100 sm:mt-0 -mt-24 md:-mt-24  ">
             <Hero />
           </div>
         </PageAnimation>

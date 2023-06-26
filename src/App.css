@@ -82,3 +82,23 @@ h4 {
 ::-webkit-scrollbar {
   display: none;
 }
+
+
+.hero_swiper .swiper-pagination-bullet {
+  width: 50px;
+  height: 5px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #f7f3f3;
+  opacity: 1;
+  background: rgba(236, 238, 243, 0.2);
+  z-index: 50;
+}
+
+.hero_swiper .swiper-pagination-bullet-active {
+  color: #e4f6f3;
+  background: #aee4f6;
+  z-index: 50;
+}

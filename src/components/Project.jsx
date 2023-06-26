@@ -19,7 +19,7 @@ const MotionBox = motion(Box);
 export default class Project extends Component {
   render() {
     return (
-      <Container minH="100vh" pt={10} maxW="container.xl" centerContent>
+      <Container id="projects" minH="100vh" pt={10} maxW="container.xl" centerContent>
         <Heading as="h2" size="lg">
           Our Achievement
         </Heading>
