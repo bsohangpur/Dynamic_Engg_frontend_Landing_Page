@@ -35,9 +35,11 @@ export default class Footer extends Component {
           </Text>
         </Flex>
         <Flex direction="column" align="center" justify="center">
-          <Flex align="center">
+          <Flex align="center" gap={4}>
             <Icon as={FaPhone} mr={2} />
-            <Link href="tel:+1234567890">050 215 9679</Link>
+            <Link href="tel:050 2159679">050 215 9679</Link>
+            <Link href="tel:04 2662399">04 266 2399</Link>
+            <Link href="tel:04 2662398">04 266 2398</Link>
           </Flex>
           <Flex align="center" mt={2}>
             <Icon as={FaEnvelope} mr={2} />
@@ -45,13 +47,13 @@ export default class Footer extends Component {
               info@dynamic-engg.com
             </Link>
           </Flex>
-          <Flex align="center" flexWrap='wrap' gap={4} mt={4}>
+          <Flex align="center" flexWrap="wrap" gap={4} mt={4}>
             {links.map((link) => (
               <Button
                 as={ReactLink}
                 variant="link"
                 color="gray.50"
-                size='lg'
+                size="lg"
                 key={link.name}
                 to={link.link}
               >
