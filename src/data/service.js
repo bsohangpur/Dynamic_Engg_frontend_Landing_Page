@@ -107,7 +107,7 @@ const service = [
         size: {},
         image:
           "https://img.freepik.com/free-photo/3d-rendering-ventilation-system_23-2149281319.jpg?w=826&t=st=1687525601~exp=1687526201~hmac=dfc8f4a6d941286cbe07b49e61cd23f918044f21667ab280c4e85fdaf60335d4",
-        text: "",
+        text: "It is essential for providing a comfortable and healthy indoor environment. HVAC systems use various technologies to control the temperature, humidity, and air quality of a building.",
       },
       {
         title: "Water Distribution Networks",
@@ -115,7 +115,7 @@ const service = [
         size: {},
         image:
           "https://img.freepik.com/free-photo/sets-cooling-towers-data-center-building_1127-3434.jpg?w=900&t=st=1687525665~exp=1687526265~hmac=522f1e359f86f7f4e2f9fda9651bb344e112289d6066482e7abe91f1d7849300",
-        text: "",
+        text: "Water Distribution Networks are systems that deliver potable water from sources to consumers. They consist of pipes, valves, pumps, tanks, reservoirs, meters and other components.",
       },
       {
         title: "Drainages Systems",
@@ -123,7 +123,7 @@ const service = [
         size: {},
         image:
           "https://img.freepik.com/free-photo/steel-pipelines-cables-plant_1359-148.jpg?w=900&t=st=1687525718~exp=1687526318~hmac=db49f9b7372f0e8de5e7d2e1d5b21b408b62ed6cb14970521f55f33e778db9ba",
-        text: "",
+        text: "Drainage systems are essential for managing water flow and preventing flooding in urban and rural areas. Drainage systems can be classified into two types: natural and artificial.",
       },
       {
         title: "Fire Protection and Suppression",
@@ -131,7 +131,7 @@ const service = [
         size: {},
         image:
           "https://img.freepik.com/free-photo/firefighter-with-safety-suit-station_23-2149206388.jpg?w=900&t=st=1687525770~exp=1687526370~hmac=91ec43581161412e0c1ef2f3862bfab2b498b72c9e94056bab05f03f4786eb74",
-        text: "",
+        text: "Fire protection and suppression are essential for ensuring the safety of people and property in case of a fire. Fire protection refers to the measures taken to prevent or reduce the risk of fire.",
       },
       {
         title: "Irrigation Systems",
@@ -139,7 +139,7 @@ const service = [
         size: {},
         image:
           "https://img.freepik.com/free-photo/young-plants-growing-very-large-plant-commercial-greenhouse_273609-14259.jpg?w=900&t=st=1687525794~exp=1687526394~hmac=ae6d27b0b0f8d8cdae7a16f4bc508c81d4cacf7e478b1c645ca1c62473a6b8e1",
-        text: "",
+        text: "It is essential for agriculture, as they provide water to crops in areas where rainfall is insufficient or unreliable.",
       },
       {
         title: "LPG and Natural Gas Distribution System",
@@ -147,7 +147,7 @@ const service = [
         size: {},
         image:
           "https://img.freepik.com/free-photo/steel-pipelines-cables-plant_1359-132.jpg?w=900&t=st=1687525828~exp=1687526428~hmac=516b96bdb162f50b6b51616bf43eb42cc0c2a84ac2732018c48523bc89ecfc15",
-        text: "",
+        text: "LPG and natural gas are two types of fuel gases that are widely used for heating, lighting, cooking, and industrial applications.",
       },
       {
         title: "Compressed Air System",
@@ -155,7 +155,7 @@ const service = [
         size: {},
         image:
           "https://img.freepik.com/free-photo/sets-cooling-towers-data-center-building_1127-3438.jpg?w=900&t=st=1687525853~exp=1687526453~hmac=1bb8e191b2bf9ba885b8a529ff870aeff91d7125bde168ef89a4c073c7e3483d",
-        text: "",
+        text: "Compressed air systems are widely used in various industries for powering pneumatic tools, equipment and processes.",
       },
     ],
   },
