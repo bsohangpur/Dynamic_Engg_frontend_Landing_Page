@@ -10,6 +10,7 @@ import {
 } from "../components";
 import PageAnimation from "./PageAnimation";
 import ScrollProgress from "./ScrollProgress";
+import ContactAddress from "../components/Contact/ContactAddress";
 
 export default class Home extends Component {
   render() {
@@ -37,6 +38,9 @@ export default class Home extends Component {
           <Project homeSlice={6} isHome={true} />
         </div>
         <div className=" bg-blue-shade-100">
+          <ContactAddress />
+        </div>
+        <div className=" bg-blue-shade-200">
           <Testimonial />
         </div>
       </div>

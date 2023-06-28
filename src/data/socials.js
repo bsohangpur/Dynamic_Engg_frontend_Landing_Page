@@ -11,37 +11,37 @@ const socials = [
   {
     name: "facebook",
     icon: FaFacebook,
-    link: "https://www.facebook.com/profile.php?id=000000000000000",
+    link: "",
     colorScheme: "facebook",
   },
   {
     name: "twitter",
     icon: FaTwitter,
-    link: "https://www.twitter.com/profile.php?id=000000000000000",
+    link: "",
     colorScheme: "twitter",
   },
   {
     name: "instagram",
     icon: FaInstagram,
-    link: "https://www.instagram.com/profile.php?id=000000000000000",
+    link: "",
     colorScheme: "pink",
   },
   {
     name: "linkedin",
     icon: FaLinkedin,
-    link: "https://www.linkedin.com/profile.php?id=000000000000000",
+    link: "",
     colorScheme: "linkedin",
   },
   {
     name: "email",
     icon: FaEnvelope,
-    link: "mailto:XXXXXXXXXXXXXXXX",
+    link: "mailto:",
     colorScheme: "blue",
   },
   {
     name: "phone",
     icon: FaPhone,
-    link: "tel:XXXXXXXXXXXXXXXX",
+    link: "tel:",
     colorScheme: "teal",
   },
 ];

@@ -3,6 +3,7 @@ import { Home, About, Contact, Project, Service } from "./pages";
 import React, { Component } from "react";
 import { AnimatePresence } from "framer-motion";
 import "./App.css";
+import ScrollButton from "./ScrollButton";
 
 class RouteSetting extends Component {
   render() {
@@ -25,5 +26,9 @@ class RouteSetting extends Component {
 
 export default function AnimationRoute() {
   const location = useLocation();
-  return <RouteSetting location={location} />;
+  return (
+    <ScrollButton>
+      <RouteSetting location={location} />
+    </ScrollButton>
+  );
 }
