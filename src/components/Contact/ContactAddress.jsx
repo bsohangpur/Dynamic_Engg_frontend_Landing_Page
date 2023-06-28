@@ -30,7 +30,7 @@ export default class ContactAddress extends Component {
           <Box>
             <Box
               as="iframe"
-              src="https://maps.google.com/maps?q=25%C2%B014'57.4%22N%2055%C2%B020'24.1%22E&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Dynamic Engineering LLC, 68V4+MQ7 - Zabeel Road - Al Karama - Dubai - United Arab Emirates&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
               id="gmap_canvas"
               frameborder="0"
               scrolling="no"
