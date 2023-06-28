@@ -40,9 +40,9 @@ export default class Home extends Component {
         <div className=" bg-blue-shade-100">
           <ContactAddress />
         </div>
-        <div className=" bg-blue-shade-200">
+        {/* <div className=" bg-blue-shade-200">
           <Testimonial />
-        </div>
+        </div> */}
       </div>
     );
   }

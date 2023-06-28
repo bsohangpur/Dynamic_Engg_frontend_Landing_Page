@@ -17,12 +17,12 @@ export default class About extends Component {
         <div className=" bg-blue-shade-200">
           <WhyChooseUS />
         </div>
-        <div className=" bg-blue-shade-100">
+        {/* <div className=" bg-blue-shade-100">
           <Team />
         </div>
         <div className=" bg-blue-shade-200">
           <Testimonial />
-        </div>
+        </div> */}
       </div>
     );
   }
